@@ -32,6 +32,22 @@ h1, h2, h3 {
     background: #0056b3;
 }
 
+.about-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.about-img:hover {
+    transform: scale(1.1);
+}
+.tech-stack span {
+    background: #42455f;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+}
+
 .project-grid {
     display: flex;
     flex-wrap: wrap;

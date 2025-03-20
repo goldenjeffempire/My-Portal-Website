@@ -13,52 +13,50 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="container">
-            <h1>Jeffery Emuodafevware Onome</h1>
-            <h2>Full-Stack Developer | UI/UX Specialist | ML Enthusiast</h2>
-            <p>Building scalable and innovative software solutions with a touch of creativity.</p>
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">Jeffery Emuodafevware Onome</h1>
+            <h2 class="hero-subtitle">
+                <span id="dynamic-text"></span>
+            </h2>
             <a href="#projects" class="btn">View My Work</a>
-            <a href="#contact" class="btn-alt">Let's Connect</a>
+            <a href="#contact" class="btn-alt">Let’s Connect</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm Jeffery, a full-stack software engineer specializing in backend development, frontend design, and AI-powered solutions. Passionate about crafting seamless user experiences, I enjoy pushing the boundaries of technology.</p>
+        <div class="about-container">
+            <img src="assets/images/profile.jpg" alt="Jeffery Onome" class="about-img">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Full-stack engineer specializing in backend, frontend, and AI-driven solutions.</p>
+                <div class="tech-stack">
+                    <span>Python</span><span>JavaScript</span><span>Django</span><span>React.js</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <h3>AI-Powered Web Builder</h3>
-                    <p>Developed a smart website builder with AI automation for instant site creation.</p>
-                    <span>Tech Stack: Python, Django, React</span>
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn-alt">GitHub</a>
-                </div>
-                <!-- More project cards -->
+        <h2>Featured Projects</h2>
+        <div class="project-slider">
+            <div class="project-card">
+                <img src="assets/images/project1.jpg" alt="Project One">
+                <h3>AI-Powered E-commerce</h3>
+                <p>Built an intelligent recommendation engine using Machine Learning.</p>
+                <a href="#">Live Demo</a>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <span>Frontend: HTML, CSS, JavaScript, React, Vue</span>
-                <span>Backend: Python, Django, Node.js, Express</span>
-                <span>Database: PostgreSQL, MongoDB, Firebase</span>
-                <span>DevOps: Docker, AWS, CI/CD</span>
-                <span>AI/ML: TensorFlow, PyTorch, OpenAI</span>
-            </div>
+        <h2>Skills</h2>
+        <div class="skill-bar">
+            <span>JavaScript</span>
+            <div class="progress" data-percent="90"></div>
         </div>
     </section>
 
@@ -79,20 +77,13 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
+        <h2>Let's Connect</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
 </body>
